@@ -1,0 +1,196 @@
+.wp-site-blocks .alignfull, .wp-site-blocks > .wp-block-group.has-background, .wp-site-blocks > .wp-block-cover, .wp-site-blocks > .wp-block-template-part > .wp-block-group.has-background, .wp-site-blocks > .wp-block-template-part > .wp-block-cover, body > .is-root-container > .wp-block-group.has-background, body > .is-root-container > .wp-block-cover, body > .is-root-container > .wp-block-template-part > .wp-block-group.has-background, body > .is-root-container > .wp-block-template-part > .wp-block-cover, .is-root-container .wp-block[data-align="full"]{
+  margin-left: calc(-1* var(--wp--custom--spacing--outer)) !important;
+  margin-right: calc(-1* var(--wp--custom--spacing--outer)) !important;
+  width: unset;
+}
+.wp-site-blocks, .edit-post-visual-editor__post-title-wrapper, .wp-block-group.alignfull, .slider .wp-block-cover, .wp-block-group.has-background, .wp-block-cover.alignfull, .is-root-container .wp-block[data-align="full"] > .wp-block-group, .is-root-container .wp-block[data-align="full"] > .wp-block-cover {
+    padding-left: var(--wp--custom--spacing--outer);
+    padding-right: var(--wp--custom--spacing--outer);
+}
+
+/*custom-css*/
+
+/*slider*/
+.slider-btn .wp-block-button__link,.section-btn .wp-block-button__link{
+  margin-top: 10px !important;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 12% 100%, 0 60%);
+}
+.slider-hr{
+  margin-left: 0;
+  height: 5px !important !important;
+}
+.slider-text{
+  width: 75%;
+}
+.slider-content-box h2 span{
+  color: var(--wp--preset--color--secondary-bg-color) !important;
+}
+/*section*/
+.main-img img{
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+}
+.main-box{
+  box-shadow: 0px 4px 24px 0px #00000026;
+}
+.main-img-box,.box-content{
+  position: relative !important;
+}
+.wave-img img,.wave-img-hover img{
+  height: 100px;
+  width: 100%;
+}
+.wave-img,.wave-img-hover{
+  position: absolute !important;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.small-text-name{
+  display: inline-block;
+  border-radius: 6px;
+}
+.wave-img-hover{
+  opacity: 0;
+}
+.box-btn{
+  position: absolute !important;
+  border-radius: 50%;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  top: 50px;
+  right: 26px;
+  box-shadow: 0px 4px 14px 0px #0000001A;
+  z-index: 999;
+}
+body .is-layout-constrained > .box-btn:where(:not(.alignleft):not(.alignright):not(.alignfull)){
+  margin-right: 0 !important;
+}
+.box-btn img{
+  position: relative !important;
+  z-index: 99;
+  top: 10px;
+  left: 4px;
+}
+.main-box:hover{
+  background: var(--wp--preset--color--secondary-bg-color) !important;
+}
+.main-box:hover .box-heading{
+  color: var(--wp--preset--color--white) !important;
+}
+.main-box:hover .small-text-name{
+  background: #7F56D9 !important;
+}
+.main-box:hover .wave-img-hover{
+  opacity: 1;
+}
+.main-box:hover .wave-img{
+  opacity: 0;
+}
+
+.water-mark-box{
+  position: relative !important;
+}
+.water-mark-box-inner{
+  position: absolute !important;
+  z-index: 1;
+  left: 0;
+  bottom: 13px;
+}
+/*footer*/
+.border-img{
+  margin-bottom: 0 !important;
+}
+.border-img img{
+  width: 100%;
+  height: 40px;
+  object-fit: cover;
+}
+.counter-text{
+  opacity: 0.5;
+}
+.comunity-box{
+  position: relative !important;
+  width: 40%;
+}
+.comunity-box figure{
+  margin-bottom: 0 !important;
+}
+.comunity-text{
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  position: absolute !important;
+  z-index: 999;
+  right: 3px;
+  top: 5px;
+}
+.comunity-text p{
+  position: relative !important;
+  top: 14px;
+  left: -2px;
+}
+.footer-widgets-upper{
+  position: relative !important;
+}
+.footer-widgets-upper:before {
+  content: '';
+  position: absolute !important;
+  background-color: var(--wp--preset--color--secondary-bg-color);
+  top: -13%;
+  left: 0;
+  height: 127px;
+  width: 95px;
+  z-index: 999;
+  clip-path: polygon(-1% 0, 9% 0, 100% 100%, 100% 100%, 0% 37%, 0 -13%);
+}
+.footer-excerpt{
+  width: 80%;
+}
+.footer-widgets .wp-block-navigation .wp-block-navigation-item{
+  padding-left: 10px;
+}
+.footer-widgets .wp-block-navigation .wp-block-navigation-item:before{
+  position: absolute !important;
+  content: '';
+  background: var(--wp--preset--color--secondary-bg-color);
+  border-radius: 50%;
+  width: 6px;
+  left: -3px;
+  height: 6px;
+  
+}
+
+
+.archieve-post{
+  position: relative !important;
+}
+.blog-date-box{
+  position: absolute !important;
+  left: 15px;
+  top: 13px;
+  z-index: 99;
+}
+.archieve-post .wp-block-post-meta > div:not(:first-child):before{
+  background: transparent;
+}
+.blog-date-mon{
+  border-bottom: 4px solid #ddd;
+}
+
+/*back to top*/
+.wp-block-button.back-to-top .wp-block-button__link.wp-element-button {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  display: inline-block;
+  z-index: 999;
+  text-indent: -5000px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.089);
+  padding: 0;
+}
